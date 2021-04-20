@@ -29,11 +29,11 @@ export default function Sidebar(props) {
     return router.route.indexOf(routeName) > -1 ? true : false;
   }
   const { color, logo, image, logoText, routes } = props;
-  var links = (
+  const links = (
     <List className={classes.list}>
       {routes.map((prop, key) => {
-        var activePro = " ";
-        var listItemClasses;
+        let activePro = " ";
+        let listItemClasses;
         if (prop.path === "/upgrade-to-pro") {
           activePro = classes.activePro + " ";
           listItemClasses = classNames({
@@ -82,7 +82,7 @@ export default function Sidebar(props) {
       })}
     </List>
   );
-  var brand = (
+  const brand = (
     <div className={classes.logo}>
       <a
         href="https://www.creative-tim.com?ref=njsmd-sidebar"

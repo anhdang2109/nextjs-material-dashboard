@@ -71,7 +71,7 @@ const styles = {
     },
     "& tbody tr td": {
       padding: "12px 8px",
-      verticalAlign: "middle",
+      // verticalAlign: "middle",
       borderTop: "1px solid rgba(0, 0, 0, 0.06)",
     },
     "& td, & th": {

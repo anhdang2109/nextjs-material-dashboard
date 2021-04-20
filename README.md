@@ -203,10 +203,10 @@ nextjs-material-dashboard
 │   │   ├── icons.js
 │   │   ├── maps.js
 │   │   ├── notifications.js
-│   │   ├── table-list.js
+│   │   ├── documents.js
 │   │   ├── typography.js
 │   │   ├── upgrade-to-pro.js
-│   │   └── user-profile.js
+│   │   └── users.js
 │   ├── index.js
 │   └── rtl
 │       └── rtl-page.js

@@ -23,8 +23,7 @@ export default function FixedPlugin(props) {
     <div
       className={classnames("fixed-plugin", {
         "rtl-fixed-plugin": props.rtlActive,
-      })}
-    >
+      })}>
       <div id="fixedPluginClasses" className={props.fixedClasses}>
         <div onClick={handleClick}>
           <i className="fa fa-cog fa-2x" />
@@ -121,8 +120,7 @@ export default function FixedPlugin(props) {
               onClick={() => {
                 setBgImage(imagine2);
                 props.handleImageClick(imagine2);
-              }}
-            >
+              }}>
               <img src={imagine2} alt="..." />
             </a>
           </li>
@@ -138,13 +136,11 @@ export default function FixedPlugin(props) {
             </a>
           </li>
           <li className={bgImage === imagine4 ? "active" : ""}>
-            <a
-              className="img-holder switch-trigger"
+            <a className="img-holder switch-trigger"
               onClick={() => {
                 setBgImage(imagine4);
                 props.handleImageClick(imagine4);
-              }}
-            >
+              }}>
               <img src={imagine4} alt="..." />
             </a>
           </li>
@@ -155,8 +151,7 @@ export default function FixedPlugin(props) {
                 color="success"
                 href="https://www.creative-tim.com/product/nextjs-material-dashboard?ref=njsmd-fixed-plugin"
                 target="_blank"
-                fullWidth
-              >
+                fullWidth>
                 Download free!
               </Button>
             </div>
@@ -167,8 +162,7 @@ export default function FixedPlugin(props) {
                 color="warning"
                 href="https://www.creative-tim.com/product/nextjs-material-dashboard-pro?ref=njsmd-fixed-plugin"
                 target="_blank"
-                fullWidth
-              >
+                fullWidth>
                 Get PRO version
               </Button>
             </div>
@@ -178,8 +172,7 @@ export default function FixedPlugin(props) {
               color="info"
               fullWidth
               href="https://www.creative-tim.com/learning-lab/nextjs/overview/material-dashboard?ref=njsmd-fixed-plugin"
-              target="_blank"
-            >
+              target="_blank">
               Documentation
             </Button>
           </li>

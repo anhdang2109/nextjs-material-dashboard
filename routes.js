@@ -18,12 +18,10 @@
 // @material-ui/icons
 import Dashboard from "@material-ui/icons/Dashboard";
 import Person from "@material-ui/icons/Person";
-import LibraryBooks from "@material-ui/icons/LibraryBooks";
-import BubbleChart from "@material-ui/icons/BubbleChart";
-import LocationOn from "@material-ui/icons/LocationOn";
-import Notifications from "@material-ui/icons/Notifications";
 import Unarchive from "@material-ui/icons/Unarchive";
-import Language from "@material-ui/icons/Language";
+import FolderOpenIcon from '@material-ui/icons/FolderOpen';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 
 const dashboardRoutes = [
   {
@@ -35,66 +33,42 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
-    path: "/user-profile",
-    name: "User Profile",
+    path: "/users",
+    name: "Users Management",
     rtlName: "ملف تعريفي للمستخدم",
     icon: Person,
 
     layout: "/admin",
   },
   {
-    path: "/table-list",
-    name: "Table List",
+    path: "/categories",
+    name: "Categories Management",
+    rtlName: "قائمة الجدول",
+    icon: FolderOpenIcon,
+
+    layout: "/admin",
+  },
+  {
+    path: "/documents",
+    name: "Documents Management",
     rtlName: "قائمة الجدول",
     icon: "content_paste",
 
     layout: "/admin",
   },
   {
-    path: "/typography",
-    name: "Typography",
-    rtlName: "طباعة",
-    icon: LibraryBooks,
-
-    layout: "/admin",
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    rtlName: "الرموز",
-    icon: BubbleChart,
-
-    layout: "/admin",
-  },
-  {
-    path: "/maps",
-    name: "Maps",
-    rtlName: "خرائط",
-    icon: LocationOn,
-
-    layout: "/admin",
-  },
-  {
-    path: "/notifications",
-    name: "Notifications",
-    rtlName: "إخطارات",
-    icon: Notifications,
-
-    layout: "/admin",
-  },
-  {
-    path: "/rtl-page",
-    name: "RTL Support",
-    rtlName: "پشتیبانی از راست به چپ",
-    icon: Language,
-
-    layout: "/rtl",
-  },
-  {
     path: "/upgrade-to-pro",
-    name: "Upgrade To PRO",
+    name: "Upload documents",
     rtlName: "التطور للاحترافية",
-    icon: Unarchive,
+    icon: CloudUploadIcon,
+
+    layout: "/admin",
+  },
+  {
+    path: "/logout",
+    name: "Logout",
+    rtlName: "التطور للاحترافية",
+    icon:  PowerSettingsNewIcon,
 
     layout: "/admin",
   },

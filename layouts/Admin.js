@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import "assets/css/nextjs-material-dashboard.css?v=1.1.0";
 // creates a beautiful scrollbar
 import PerfectScrollbar from "perfect-scrollbar";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
@@ -29,9 +30,9 @@ export default function Admin({ children, ...rest }) {
   // ref to help us initialize PerfectScrollbar on windows devices
   const mainPanel = React.createRef();
   // states and functions
-  const [image, setImage] = React.useState(bgImage);
+  const [image, setImage] = React.useState("");
   const [color, setColor] = React.useState("white");
-  const [fixedClasses, setFixedClasses] = React.useState("dropdown show");
+  const [fixedClasses, setFixedClasses] = React.useState("dropdown");
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const handleImageClick = (image) => {
     setImage(image);
@@ -79,7 +80,7 @@ export default function Admin({ children, ...rest }) {
     <div className={classes.wrapper}>
       <Sidebar
         routes={routes}
-        logoText={"Creative Tim"}
+        logoText={"MY LIBRARY"}
         logo={logo}
         image={image}
         handleDrawerToggle={handleDrawerToggle}

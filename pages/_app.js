@@ -23,16 +23,17 @@ import Router from "next/router";
 
 import PageChange from "components/PageChange/PageChange.js";
 
-import "assets/css/nextjs-material-dashboard.css?v=1.1.0";
+// import "assets/css/nextjs-material-dashboard.css?v=1.1.0";
 
-Router.events.on("routeChangeStart", (url) => {
-  console.log(`Loading: ${url}`);
-  document.body.classList.add("body-page-transition");
-  ReactDOM.render(
-    <PageChange path={url} />,
-    document.getElementById("page-transition")
-  );
-});
+// Router.events.on("routeChangeStart", (url) => {
+//   console.log(`Loading: ${url}`);
+//   document.body.classList.add("body-page-transition");
+//   ReactDOM.render(
+//       // <h1>hello</h1>,
+//     <PageChange path={url} />,
+//     document.getElementById("page-transition")
+//   );
+// });
 Router.events.on("routeChangeComplete", () => {
   ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));
   document.body.classList.remove("body-page-transition");
@@ -85,7 +86,6 @@ export default class MyApp extends App {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <title>NextJS Material Dashboard by Creative Tim</title>
-          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
         </Head>
         <Layout>
           <Component {...pageProps} />
